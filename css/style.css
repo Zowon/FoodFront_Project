@@ -407,7 +407,7 @@ body {
 /* Match About Us section padding and alignment to hero section */
 .about {
   width: 100%;
-  background: #f4f9fd;
+  background: #F1F8FF;
   padding: 80px 0 80px 0;
 }
 
@@ -1022,7 +1022,7 @@ body {
 /* Testimonial Section */
 .testimonial {
   width: 100%;
-  background: #f4f9fd;
+  background: #F1F8FF;
   padding: 80px 0 60px 0;
 }
 
@@ -1290,6 +1290,7 @@ body {
   margin-bottom: 12px;
   color: #fff;
 }
+
 
 .contact-hero__breadcrumb {
   color: #fff;
