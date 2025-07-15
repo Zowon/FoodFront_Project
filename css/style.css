@@ -157,8 +157,8 @@ body {
 /* Features Section */
 .features {
   width: 100%;
-  background: #f9f9f9;
-  padding: 60px 0;
+  background: #ffffff;
+  padding: 96px 0;
   display: flex;
   justify-content: center;
 }
@@ -408,7 +408,7 @@ body {
 .about {
   width: 100%;
   background: #F1F8FF;
-  padding: 80px 0 80px 0;
+  padding: 96px 0 96px 0;
 }
 
 .about__container {
@@ -425,8 +425,7 @@ body {
 .about__subtitle {
   color: #ffa420;
   font-size: 1.3rem;
-  font-family: 'Poppins', cursive, Arial, sans-serif;
-  font-weight: 600;
+  font-family: Pacifico;
   font-style: italic;
   margin-bottom: 4px;
   display: flex;
@@ -507,7 +506,7 @@ body {
   right: 16px;
   top: 50%;
   transform: translateY(-50%);
-  width: 3px;
+  width: 6px;
   height: 48px;
   background: #ffa420;
   border-radius: 2px;
@@ -524,7 +523,7 @@ body {
   left: 16px;
   top: 50%;
   transform: translateY(-50%);
-  width: 3px;
+  width: 6px;
   height: 48px;
   background: #ffa420;
   border-radius: 2px;
@@ -654,7 +653,7 @@ body {
 /* Menu Section */
 .menu {
   width: 100%;
-  background: #f4f9fd;
+  background: #ffffff;
   padding: 80px 0 80px 0;
 }
 
@@ -675,7 +674,7 @@ body {
 .menu__subtitle {
   color: #ffa420;
   font-size: 1.5rem;
-  font-family: 'Poppins', cursive, Arial, sans-serif;
+  font-family: Pacifico;
   font-weight: 600;
   font-style: italic;
   display: inline-flex;
@@ -788,11 +787,23 @@ body {
   gap: 4px;
 }
 
+.menu__item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .menu__item-title {
-  font-size: 1.3rem;
-  font-weight: 700;
+  margin: 0;
+  font-weight: bold;
+  font-size: 18px;
   color: #181c23;
-  margin-bottom: 0;
+}
+
+.menu__item-price {
+  color: orange;
+  font-weight: bold;
+  font-size: 16px;
 }
 
 .menu__item-desc {
@@ -1043,7 +1054,7 @@ body {
 .testimonial__subtitle {
   color: #ffa420;
   font-size: 1.5rem;
-  font-family: 'Poppins', cursive, Arial, sans-serif;
+  font-family: Pacifico;
   font-weight: 600;
   font-style: italic;
   display: inline-flex;
@@ -1106,7 +1117,8 @@ body {
 
 .testimonial__card:hover .testimonial__quote,
 .testimonial__card:hover .testimonial__client-name,
-.testimonial__card:hover .testimonial__text {
+.testimonial__card:hover .testimonial__text,
+.testimonial__card:hover .testimonial__client-prof {
   color: #fff;
   transition: color 0.3s;
 }
@@ -1526,7 +1538,7 @@ body {
 /* Master Chefs Section */
 .chefs {
   width: 100%;
-  background: #fff;
+  background: #ffffff;
   padding: 60px 0 60px 0;
 }
 
@@ -1547,7 +1559,7 @@ body {
 .chefs__subtitle {
   color: #ffa420;
   font-size: 1.2rem;
-  font-family: 'Poppins', cursive, Arial, sans-serif;
+  font-family: Pacifico;
   font-weight: 600;
   font-style: italic;
   display: inline-flex;
@@ -2216,4 +2228,31 @@ body {
   .footer__right {
     gap: 8px;
   }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 48px;
+  height: 48px;
+  background: #FFA726;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+
+.back-to-top img {
+  width: 24px;
+  height: 24px;
+  display: block;
 }
